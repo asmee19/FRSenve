@@ -1,0 +1,66 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  
+  .bg-3 { 
+    background-color: #0a0a0a; /* White */
+    color: #ffffff;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  </style>
+</head>
+<body>
+
+
+
+
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Fashion Recommender</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>what you wear is how you present yourself to the world</p>
+      <img src="{% static 'images/baggy.jpg' %}" class="img-responsive margin" style="width:70%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Fashion is more art than art is and we recommend here</p>
+      <img src="{% static 'images/black.jpg' %}" class="img-responsive margin" style="width:90%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Dressed to chill pillll</p>
+      <img src="{% static 'images/7.jpg' %}" class="img-responsive margin" style="width:90%" alt="Image">
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<h3>Contact Form</h3>
+
+
+
+<div class ="container">
+    <form method="POST" class = "was-validated"  >
+    {% csrf_token %}
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input name="name" id="fname" class ="form-control"  placeholder="" required><br><br>
+          
+        
+          <label for="exampleInputEmail">Email</label>
+          <input name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required><br><br>
+        
+            <label for="subject">Subject</label>
+            <textarea name="subject"  class="form-control" id="subject" placeholder="" style="height:200px" required></textarea><br> <br>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </div>
+    </form>
